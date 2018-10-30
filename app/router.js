@@ -7,6 +7,12 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('managers');
+  this.route('posters', function() {
+    this.route('why-hackers-hack');
+    this.route('good-password');
+    this.route('security-tools');
+  });
 });
 
 export default Router;
